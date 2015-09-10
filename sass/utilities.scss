@@ -1,0 +1,196 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+img {
+   width: 100%;
+   margin-bottom:10px;
+}
+
+body {
+   display: flex; // In order to obtain a sticky footer
+   min-height: 100vh; // In order to obtain a sticky footer
+   flex-direction: column; // In order to obtain a sticky footer
+   color: #333333;
+   background-color: #a9be95;
+}
+
+
+header {
+   margin-top: 50px;
+   margin-bottom: 80px;
+}
+
+
+// In order to obtain a sticky footer
+main {
+  flex: 1;
+  position: relative;
+
+}
+
+
+footer {
+   width: 100%;
+   background-color: #333333;
+   padding: 20px 0px;
+   margin-top: 50px;
+   color: #5C5C5C;
+}
+
+
+// Alignment
+.text-right {
+   text-align: right;
+}
+
+.center {
+   text-align: center;
+}
+
+
+// Padding
+.padding-top-none {
+   padding-top:0px;
+}
+
+.padding-bottom-none {
+   padding-bottom:0px;
+}
+
+
+// Margin
+.margin-top-none {
+   margin-top:0px;
+}
+
+.margin-top-large {
+   margin-top:20px;
+}
+
+.margin-top-xxl {
+   margin-top:40px;
+}
+
+
+.margin-bottom-none {
+   margin-bottom:0px;
+}
+
+.margin-bottom-small {
+   margin-bottom:10px;
+}
+
+.margin-bottom-medium {
+   margin-bottom:15px;
+}
+
+.margin-bottom-large {
+   margin-bottom:20px;
+}
+
+.margin-bottom-xl {
+   margin-bottom:30px;
+}
+
+.margin-bottom-xxl {
+   margin-bottom:40px;
+}
+
+// Lists
+ul.social {
+   padding:0px;
+   margin:0px 0px 0px 0px;
+   font-size: 1.3em;
+}
+
+ul.social {
+   li {
+      display: inline;
+      padding-right:10px;
+   }
+   li:last-child {
+      display: inline;
+      padding-right:0px;
+   }
+}
+
+
+ul {
+   padding:0px;
+   margin:0px 0px 10px 0px;
+}
+
+ul {
+   li {
+      display: inline;
+      padding-right:10px;
+   }
+   li:last-child {
+      display: inline;
+      padding-right:0px;
+   }
+}
+
+
+
+ul.list-small {
+   padding:0px;
+   margin:20px 0px 30px 0px;
+   display: block;
+}
+
+ul.list-small {
+   li {
+      display: block;
+      padding:0px;
+      margin:0px 0px 2px 0px;
+      font-size: .8em;
+      @media (max-width: $grid-tablet-breakpoint - 1) {
+         font-size: .7em;
+      }
+   }
+}
+
+
+
+// Horizontal Rule
+hr {
+   margin: 80px 0px 90px 0px;
+   background-color: #333333;
+   height: 10px;
+   border-style: solid;
+   border:0;
+   &.small {
+      height: 5px;
+      margin: 50px 0px 90px 0px;
+   }
+}
+
+
+
+
+// links
+
+ul.social li > a {
+   text-decoration: none;
+   color: rgba(169,190,149,1);
+   transition: all 0.3s ease 0s;
+   &:hover {
+   color: rgba(169,190,149,0.5);
+   }
+}
+
+a.button {
+   border: 4px solid rgba(51,51,51,0.3);
+   color: rgba(51,51,51,0.3);
+   background-color: transparent;
+   padding:5px 6px;
+   text-decoration: none;
+   display: inline-block;
+   transition: all 0.3s ease 0s;
+   &:hover {
+   border: 4px solid #333;
+   color: #333;
+   }
+}
