@@ -662,7 +662,7 @@ h1 {
   font-size: 8em; }
   @media (max-width: 479px) {
     h1 {
-      font-size: 6em; } }
+      font-size: 4.8em; } }
 
 h2 {
   font-family: 'SweetSansPro-Bold', Arial, Helvetica, sans-serif;
